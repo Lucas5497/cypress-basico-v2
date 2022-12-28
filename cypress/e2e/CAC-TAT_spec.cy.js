@@ -21,7 +21,9 @@ describe("Teste da central de atendimento ao cliente", () => {
 
 
   it("Insere dados no formulário", () => {
-    cy.get('input[type="text"]').type('Lucas')
+    cy.get('input.firstname').type('Lucas')
 
   })
+
+  it.each("meu primeiro teste", () => {})
 })
