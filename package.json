@@ -1,28 +1,19 @@
 {
-  "name": "curso-cypress-v2",
+  "name": "paralelizacao",
   "version": "1.0.0",
-  "description": "Repositório da versão 2 do curso básico de Cypress da Escola Talking About Testing",
-  "main": "src/index.html",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-      "cy:open": "cypress open",
-      "test": "cypress run"
-    
-    },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wlsf82/cypress-basico-v2.git"
+    "cypress:open":"cypress open",
+    "test:batch-1":"cypress run --spec 'cypress/e2e/batch-1'",
+    "test:batch-2":"cypress run --spec 'cypress/e2e/batch-2'",
+    "test:batch-3":"cypress run --spec 'cypress/e2e/batch-3'",
+    "test:batch-4":"cypress run --spec 'cypress/e2e/batch-4'"
   },
-  "keywords": [
-    "Testing",
-    "Cypress.io",
-    "Talking About Testing",
-    "Cypress Básico",
-    "Escola TAT"
-  ],
-  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev/)",
-  "license": "MIT",
-  "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
-  "dependencies": {
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
     "cypress": "^12.2.0"
   }
 }
