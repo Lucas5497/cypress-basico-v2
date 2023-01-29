@@ -1,8 +1,5 @@
 /// <reference types="cypress" />
 
-
-
-
 describe("Assertions variadas em diversos tipos de dados", () => {
     
     it('Igualdade',() =>{
@@ -13,17 +10,14 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verifica se a váriavel A é diferente de 3
         expect(a, "Deveria ser 1").not.to.be.equal(3);
-
         console.log(a); 
-
     })
-
-
 
     it("Veracidade",() =>{
         var a = true;
         var b = null;
         let c;
+
         //verifica se o valor armazenado na váriavel é verdadeiro
         expect(a).to.be.true;
 
@@ -46,7 +40,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
             b: 2,
             c: 3
         }
-
         //quatro formas diferentes de verificar a igualdade de um objeto no caso comparando ele com ele mesmo
         expect(objeto).equal(objeto)
         expect(objeto).equals(objeto)
@@ -71,7 +64,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verifica se o objeto está vazio
         expect({}).to.be.empty
-
     })
 
     it("Arrays",() =>{
@@ -88,8 +80,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verifica se o array está vazio
         expect([]).to.be.empty
-
-
     })
 
 
@@ -108,7 +98,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verifica se é um array
         expect([]).to.be.an("array")
-    
     })
 
     it("Strings", () =>{
@@ -121,7 +110,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verfica se o no text contem algum determinado texto ou caracteres
         expect(text).to.contains("teste")
-
     })
 
     it("Números", () =>{
@@ -145,9 +133,6 @@ describe("Assertions variadas em diversos tipos de dados", () => {
 
         //verifica se o numero float é maior que 5
         expect(numerofloat).to.be.above(5)
-
-
-
     })
 
 })
